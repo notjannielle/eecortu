@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  clear: both;
+}
+.main {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.main .characters {
+  text-align: left;
+}
+.main p,
+.main h1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+.main .search {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main input {
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  padding: 0 0 0 5px;
+}
+.main .eachCharacter {
+  width: 14%;
+  float: left;
+  padding: 1%;
+}
+.main .eachCharacter img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.main .eachCharacter p {
+  font-size: 20px;
+}

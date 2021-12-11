@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Angular Search</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="main" ng-app="myApp">
+  <h1><center>LICENSE HOLDER DATABASE</center></h1>
+  <div class="characters" ng-controller="controller">
+      <p class="search">Search: (its working)<input type="text" value="" ng-model="search" /></p><div class="clear"></div>
+    <div class="eachCharacter" ng-repeat="character in data | filter : search">
+      <div class="characterImage">
+        <img src="{{ character.image }}" alt="" />
+      </div>
+      <div class="characterName">
+        <p><b>ID No: </b>{{ character.id }}</p>
+      </div>
+      <div class="alignment">
+        <p><b>Last Name :</b> {{ character.lname }}</p>
+      </div>
+       <div class="alignment">
+        <p><b>Middle Name:</b> {{ character.mname }}</p>
+      </div>
+      <div class="alignment">
+        <p><b>First Name:</b> {{ character.fname }}</p>
+      </div>
+        <div class="alignment">
+        <p><b>Contact No: </b>{{ character.contact }}</p>
+      </div>
+      <div class="alignment">
+        <p><b>Emergency Contact:</b> {{ character.emergency }}</p>
+      </div>
+      <div class="alignment">
+        <p><b>Blood Type: </b>{{ character.blood }}</p>
+      </div>
+      <div class="alignment">
+        <p><b>Gender: </b>{{ character.gender }}</p>
+      </div>
+      <div class="alignment">
+        <p><b>Address:</b> {{ character.address }}</p>
+      </div>
+      <div class="alignment">
+        <p><b>Status: </b>{{ character.status }}</p>
+      </div>
+      <div class="alignment">
+        <p><b>Past Violation: </b>{{ character.past }}</p>
+      </div>
+       <div class="alignment">
+        <p><b>Unpaid Violation:</b> {{ character.unpaid }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
